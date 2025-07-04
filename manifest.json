@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Innocent Helper (Malicious Demo)",
+  "version": "1.1",
+  "description": "Demo showing how malicious extensions steal your data, including location and camera.",
+  "permissions": ["cookies", "tabs", "storage", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
